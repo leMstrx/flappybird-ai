@@ -2,7 +2,7 @@ import math
 import random
 
 def sigmoid(x):
-    return 1 / 1 + math.exp(-x)
+    return 1 / (1 + math.exp(-x))
 
 class NeuralNetwork: 
     def __init__(self, input_size, hidden_size, output_size):
@@ -34,4 +34,4 @@ class NeuralNetwork:
 
         return outputs # list of output sized elements
     
-    
+
